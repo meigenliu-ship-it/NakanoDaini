@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - 中野第二自治会</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏘️ 中野第二自治会</h1>
+            <p class="subtitle">地域の安全・安心を守ります</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="bousai.html">防災情報</a></li>
+                <li><a href="download.html">資料ダウンロード</a></li>
+                <li><a href="links.html">外部リンク</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+                <li><a href="contact.html" class="active">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="page-header">
+            <h2>✉️ お問い合わせ</h2>
+            <p class="lead">ご質問・ご意見・ご要望などお気軽にお寄せください</p>
+        </section>
+
+        <section class="content-section">
+            <div class="contact-info">
+                <h2>📞 連絡先</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-label">📍 住所</span>
+                        <p>〒164-0001<br>東京都中野区○○町○-○-○</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">📞 電話</span>
+                        <p>03-XXXX-XXXX<br>(受付時間: 平日 9:00~17:00)</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">📧 メール</span>
+                        <p><a href="mailto:info@nakano2-jichikai.example.com">info@nakano2-jichikai.example.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">🕐 事務所開所時間</span>
+                        <p>毎週月・水・金曜日 10:00~15:00<br>(祝日・年末年始を除く)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📝 お問い合わせフォーム</h2>
+            <div class="form-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">お名前 <span class="required">*必須</span></label>
+                        <input type="text" id="name" name="name" required placeholder="山田 太郎">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">メールアドレス <span class="required">*必須</span></label>
+                        <input type="email" id="email" name="email" required placeholder="example@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">電話番号</label>
+                        <input type="tel" id="phone" name="phone" placeholder="03-1234-5678">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">お問い合わせ項目 <span class="required">*必須</span></label>
+                        <select id="subject" name="subject" required>
+                            <option value="">選択してください</option>
+                            <option value="防災について">防災について</option>
+                            <option value="イベントについて">イベントについて</option>
+                            <option value="自治会への加入">自治会への加入</option>
+                            <option value="資料について">資料について</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">お問い合わせ内容 <span class="required">*必須</span></label>
+                        <textarea id="message" name="message" rows="8" required placeholder="お問い合わせ内容を詳しくご記入ください"></textarea>
+                    </div>
+
+                    <div class="form-note">
+                        <p>※個人情報は、お問い合わせへの対応にのみ使用し、適切に管理いたします。</p>
+                        <p>※お問い合わせへの返信には2~3営業日いただく場合がございます。</p>
+                    </div>
+
+                    <div class="button-center">
+                        <button type="submit" class="btn btn-primary btn-large">送信する</button>
+                    </div>
+                </form>
+
+                <div class="form-info">
+                    <h3>📌 このフォームについて</h3>
+                    <p>このHTMLファイルには静的なフォームが含まれています。実際に機能させるには、以下のいずれかの方法を選択してください。</p>
+                    
+                    <h4>方法1: Googleフォームを使用(推奨)</h4>
+                    <ol>
+                        <li><a href="https://forms.google.com" target="_blank">Google Forms</a>でフォームを作成</li>
+                        <li>「送信」→「埋め込みコード」をコピー</li>
+                        <li>このページの&lt;form&gt;タグ全体を、コピーしたコードで置き換え</li>
+                    </ol>
+
+                    <h4>方法2: メールアドレスリンクを使用(簡易版)</h4>
+                    <ol>
+                        <li>フォームを削除</li>
+                        <li>代わりに大きなメールボタンを配置</li>
+                        <li>例: &lt;a href="mailto:info@example.com" class="btn btn-primary btn-large"&gt;メールで問い合わせ&lt;/a&gt;</li>
+                    </ol>
+
+                    <h4>方法3: サーバー側プログラムを使用(上級者向け)</h4>
+                    <p>PHPやNode.jsなどのサーバー側プログラムでメール送信機能を実装します。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>❓ よくあるご質問</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>Q: 自治会に加入するにはどうすればいいですか?</h3>
+                    <p>A: 自治会事務所または自治会役員までお問い合わせください。加入手続きについてご案内いたします。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: 防災訓練に参加したいのですが、事前申込は必要ですか?</h3>
+                    <p>A: 基本的に事前申込は不要です。当日、直接会場にお越しください。ただし、大規模な訓練の場合は事前申込をお願いすることもあります。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: 防災マニュアルの冊子版はどこで入手できますか?</h3>
+                    <p>A: 自治会事務所で配布しています。開所時間内にお越しください。また、郵送をご希望の場合はお問い合わせください。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: イベントの写真を使用したいのですが...</h3>
+                    <p>A: 使用目的をお伺いした上で、提供可能かどうか判断いたします。お問い合わせフォームからご連絡ください。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: 自治会費はいくらですか?</h3>
+                    <p>A: 月額500円(年間6,000円)です。詳細はお問い合わせください。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: 災害時の避難場所を教えてください</h3>
+                    <p>A: <a href="bousai.html">防災情報ページ</a>に避難場所一覧を掲載しています。ご確認ください。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🗺️ アクセス</h2>
+            <div class="access-info">
+                <h3>📍 中野第二自治会事務所</h3>
+                <p class="address">〒164-0001 東京都中野区○○町○-○-○</p>
+                
+                <h4>🚃 電車でお越しの場合</h4>
+                <ul>
+                    <li>JR中央線・総武線「中野駅」南口より徒歩10分</li>
+                    <li>東京メトロ丸ノ内線「中野坂上駅」より徒歩8分</li>
+                </ul>
+
+                <h4>🚌 バスでお越しの場合</h4>
+                <ul>
+                    <li>中野駅南口より○○系統「△△停留所」下車徒歩3分</li>
+                </ul>
+
+                <p class="note">※駐車場はございません。公共交通機関をご利用ください。</p>
+
+                <div class="map-placeholder">
+                    <p>🗺️ Googleマップを埋め込む場合</p>
+                    <p>Google Mapsで場所を検索 → 「共有」→「地図を埋め込む」→ HTMLコードをコピーしてここに貼り付けてください。</p>
+                    <p>例:</p>
+                    <pre><code>&lt;iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"&gt;&lt;/iframe&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>💬 お気軽にご連絡ください</h2>
+            <p>中野第二自治会では、皆様からのご意見・ご要望をお待ちしております。<br>
+            より良い地域づくりのため、ぜひお声をお聞かせください。</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>中野第二自治会</h3>
+                    <p>〒164-0001<br>
+                    東京都中野区○○町○-○-○<br>
+                    TEL: 03-XXXX-XXXX<br>
+                    Email: info@nakano2-jichikai.example.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>緊急連絡先</h3>
+                    <p>火事・救急: 119<br>
+                    警察: 110<br>
+                    災害伝言ダイヤル: 171<br>
+                    中野区防災課: 03-XXXX-XXXX</p>
+                </div>
+                <div class="footer-section">
+                    <h3>リンク</h3>
+                    <p>
+                        <a href="https://www.jma.go.jp/" target="_blank">気象庁</a><br>
+                        <a href="https://www.bousai.metro.tokyo.lg.jp/" target="_blank">東京都防災</a><br>
+                        <a href="https://www.city.tokyo-nakano.lg.jp/" target="_blank">中野区</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 中野第二自治会. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // フォーム送信のデモ用スクリプト(実際には機能しません)
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('このフォームは表示用です。実際に機能させるには、Googleフォームなどを使用してください。\n\n詳しくは「このフォームについて」のセクションをご覧ください。');
+        });
+    </script>
+</body>
+</html>
